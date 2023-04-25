@@ -12,7 +12,7 @@ for (i = 1; i <= 10; i++)
 {
 for (alpha = 97; alpha <= 122; alpha++)
 {
-_putchar(a);
+_putchar(alpha);
 }
 _putchar('\n');
 }
