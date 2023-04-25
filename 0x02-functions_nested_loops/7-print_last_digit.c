@@ -10,5 +10,14 @@ int print_last_digit(int a)
 {
 int var;
 var = a % 10;
+if (var < 0)
+{
+_putchar(-var + 48);
+return (-var);
+}
+else
+{
+_putchar(var + 48);
 return (var);
+}
 }
