@@ -20,10 +20,8 @@ _putchar(',');
 _putchar(' ');
 p = num * n;
 if (p <= 99)
-{
 _putchar(' ');
 if (p <= 9)
-{
 _putchar(' ');
 if (p >= 100)
 {
@@ -40,6 +38,3 @@ _putchar('\n');
 }
 }
 }
-}
-}
-
