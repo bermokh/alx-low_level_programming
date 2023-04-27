@@ -1,22 +1,25 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
-* positive_or_negative - chek the code
-* @i: integer number
+* positive_or_negative - print the result
 *
+* @n: integer number
+* Return: Always 0 (Success)
 */
-void positive_or_negative(int i)
+int positive_or_negative(int n)
 {
-if (i > 0)
+if (n > 0)
 {
-printf("%d is positive\n", i);
+printf("%d is positive\n", n);
 }
-if (i < 0)
+if (n < 0)
 {
-printf("%d is negative\n", i);
+printf("%d is negative\n", n);
 }
-else
+if (n == 0)
 {
-printf("%d is zero\n", i);
+printf("%d is zero\n", n);
 }
+return (0);
 }
