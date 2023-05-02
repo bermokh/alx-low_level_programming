@@ -1,10 +1,9 @@
 #include "main.h"
 /**
-* _strcpy - Copy a string pointed to by src. 
-* @dest: Destination value
-* @src: source value
-*
-* return: the pointer to dest
+* _strcpy - returns the length of a string
+*@dest: string to get the lenght
+*@src: string
+*Return: lenght of the string
 */
 char *_strcpy(char *dest, char *src)
 {
