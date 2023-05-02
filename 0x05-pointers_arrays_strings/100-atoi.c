@@ -1,8 +1,8 @@
 #include "main.h"
-/*
-* _atoi - convert a string to an integer.
-* @s: the pointer to convert
-* return: A interger
+/**
+* _atoi - returns the length of a string
+*@s: string to get the lenght
+*Return: ni
 */
 int _atoi(char *s)
 {
