@@ -1,11 +1,10 @@
 #include "main.h"
 /**
 *_memset - function that fills memory with a constant byte.
-*@s: the pointre where stocked the n byte of b,
-
-*@b: the variable char, 
-*@n: number of bytes
-*return: (s) the value,
+*@s: the using string,
+*@b: number of byts
+*@n: unsigned integer
+*Return: the result in pointer
 */
 char *_memset(char *s, char b, unsigned int n)
 {
