@@ -11,10 +11,7 @@ char *_strdup(char *str)
 int i, lent = 0;
 char *p;
 if (str == NULL)
-{
 return (NULL);
-}
-else
 
 for (; str[lent] != '\0'; lent++)
 
