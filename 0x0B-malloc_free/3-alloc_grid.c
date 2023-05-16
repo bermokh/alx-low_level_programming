@@ -13,7 +13,7 @@ int i, j, k, l;
 int **tab;
 if (width <= 0 || height <= 0)
 return (NULL);
-tab = malloc(sizeof(int) * height);
+tab = malloc(sizeof(int *) * height);
 if (tab == NULL)
 {
 free(tab);
@@ -24,7 +24,7 @@ for (i = 0; i < height; i++)
 tab[i] = malloc(sizeof(int) * width);
 if (tab[i] == NULL)
 {
-for (j = 0; j >= 0; j--)
+for (j = i; j >= 0; j--)
 {
 free(tab[j]);
 }
