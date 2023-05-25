@@ -11,15 +11,15 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
-va_list l;
 char *ptr;
+va_list l;
 va_start(l, n);
-for (i = 0; i < n ; i++)
+for (i = 0; i < n; i++)
 {
 ptr = va_arg(l, char*);
 if (ptr == NULL)
 {
-printf("nil");
+printf("(nil)");
 }
 else
 {
@@ -30,6 +30,6 @@ if (separator != NULL && i != n - 1)
 printf("%s", separator);
 }
 }
-printf("\n");
 va_end(l);
+printf("\n");
 }
