@@ -9,4 +9,16 @@
 *Return: the nth nod
 */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
-
+{
+unsigned int i = 0;
+listint_t *ptr = head;
+while (ptr != NULL && i < index)
+{
+ptr = (*ptr).next;
+i++;
+}
+if (ptr != NULL)
+return (ptr);
+else
+return (NULL);
+}
