@@ -29,7 +29,7 @@ int j;
 j = close(fp);
 if (j == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fp %d\n", fp);
+dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %d\n", fp);
 exit(100);
 }
 }
@@ -56,7 +56,7 @@ do {
 if (a == -1 || c == -1)
 {
 dprintf(STDERR_FILENO,
-"Error: Can't read from file %s\n", argv[1]);
+"Error: Can't read from file NAME_OF_THE_FILE %s\n", argv[1]);
 free(buff);
 exit(98);
 }
@@ -64,7 +64,7 @@ m = write(b, buff, c);
 if (b == -1 || m == -1)
 {
 dprintf(STDERR_FILENO,
-"Error: Can't write to %s\n", argv[2]);
+"Error: Can't write to NAME_OF_THE_FILE %s\n", argv[2]);
 free(buff);
 exit(99);
 }
