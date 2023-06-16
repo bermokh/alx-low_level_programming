@@ -29,7 +29,8 @@ int j;
 j = close(fp);
 if (j == -1)
 {
-dprintf(STDERR_FILENO,"Error: Can't close fp %d\n", fp);
+dprintf(STDERR_FILENO,
+"Error: Can't close fp %d\n", fp);
 exit(100);
 }
 }
@@ -45,7 +46,8 @@ int a, b, c, m;
 char *buff;
 if (argc != 3)
 {
-dprintf(STDERR_FILENO,"Usage: cp file_from file_to\n");
+dprintf(STDERR_FILENO,
+"Usage: cp file_from file_to\n");
 exit(97);
 }
 buff = creat_buff(argv[2]);
