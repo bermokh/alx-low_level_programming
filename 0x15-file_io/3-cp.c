@@ -13,7 +13,7 @@ buff = malloc(sizeof(char) * 1024);
 if (buff == NULL)
 {
 dprintf(STDERR_FILENO,
-"ERROR: Can't write to %s\n", file);
+"Error: Can't write to %s\n", file);
 exit(99);
 }
 return (buff);
