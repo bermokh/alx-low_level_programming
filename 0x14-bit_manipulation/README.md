@@ -1,1 +1,0 @@
-stdying a manupilation bitwise
