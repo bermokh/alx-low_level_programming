@@ -17,9 +17,9 @@ fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
 buf = malloc(sizeof(char) * letters);
-t = read(fd, buf, lettres);
-wr = write(STDOUT_FILENO, buf, t);
-free(buf);
+t = read(fd, buff, lettres);
+wr = write(STDOUT_FILENO, buff, t);
+free(buff);
 close(fd);
 return (wr);
 }
