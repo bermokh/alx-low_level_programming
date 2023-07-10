@@ -15,8 +15,10 @@ ssize_t wr;
 ssize_t t;
 fd = open(filename, O_RDONLY);
 if (fd == -1)
+{
 return (0);
-buf = malloc(sizeof(char) * letters);
+}
+buff = malloc(sizeof(char) * letters);
 t = read(fd, buff, lettres);
 wr = write(STDOUT_FILENO, buff, t);
 free(buff);
