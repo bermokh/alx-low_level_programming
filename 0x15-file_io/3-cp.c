@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 char *creat_buf(char *file);
 void close_file(int fd);
 /**
-*creat_buf _ save 1024  bytes for a bufer
+*creat_buf - save 1024  bytes for a bufer
 *@file: the name of file
 *Return: a pointer to the newly
 */
@@ -20,7 +21,7 @@ exit(99);
 return (buffer);
 }
 /**
-*close-file - closes file
+*close_file - closes file
 *@fd: the nameof file
 */
 void close_file(int fd)
