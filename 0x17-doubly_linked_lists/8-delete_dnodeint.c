@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * delete_dnodeint_at_index - deltes a node in a doubly linked list
  * at a given index
